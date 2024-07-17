@@ -62,7 +62,7 @@ const getRandomEmployee = function(employeesArray) {
   const randomIndex = Math.floor(Math.random() * employeesArray.length); // Generate a random index between 0 and the length of the employeesArray - 1
   const randomEmployee = employeesArray[randomIndex]; // Select the employee at the random index
   console.log(`Random employee: ${randomEmployee.firstName} ${randomEmployee.lastName}`); // Display the random employee's name
-  console.log('==============================');
+  console.log('Congratulations to this weeks hard working employee: ');
   return randomEmployee; // Return the random employee object
 }
 
