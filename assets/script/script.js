@@ -2,7 +2,7 @@
 const addEmployeesBtn = document.querySelector('#add-employees-btn');
 
 // Collect employee data
-const collectEmployees = function() {
+const collectEmployees = function() { 
   // TODO: Get user input to create and return an array of employee objects
   const employees= []; // const used to input employee data as an array of objects
   let doneAddingEmployees = false; // Flag to track when all employees have been added
@@ -12,25 +12,34 @@ const collectEmployees = function() {
       doneAddingEmployees = true; //If user enters "done", break the loop and stop adding employees and et the flag to true to break the loop
       break; // Break the loop
     }// Collect employee data
-    const collectEmployees = function() { // Function to collect employee data
-      // ...
-    
-      const employeeFirstName = prompt('Enter the first name of the employee:'); // Prompt user for employee first name
-      const employeeLastName = prompt('Enter the last name of the employee:'); // Prompt user for employee last name
-    
-      const employeeSalary = prompt('Enter the salary of the employee:'); // Prompt user for employee salary as a string
-      const salaryNumber = +prompt(employeeSalary); // Convert the employee salary as a string to a number using the unary plus operator
-    
-      // ...
-    
-      employees.push({ // Save the employee data in an employee object
-        firstName: employeeFirstName, // Save the employee first name in the employee object
-        lastName: employeeLastName,
-        salary: salaryNumber, // Store the employee salary as a number
-      });
-    
-      // ...
+// Collect employee data
+const collectEmployees = function() { 
+  const employees = [];
+  let doneAddingEmployees = false;
+
+  while (doneAddingEmployees === false) { // Start a loop to collect employee data until the user enters "done"
+    const employeeName = prompt('Enter the name of an employee (or "done" to finish):'); // Prompt user for employee name and check if they want to finish adding employees
+
+    if (employeeName.toLowerCase() === 'done') {  // If user enters "done", break the loop and stop adding employees and set the flag to
+      doneAddingEmployees = true;
+      break;
     }
+
+    const employeeFirstName = prompt('Enter the first name of the employee:'); // Prompt user for employee first name and save it in the employee object
+    const employeeLastName = prompt('Enter the last name of the employee:'); // Prompt user for employee last name and save it in the employee object
+   
+    const employeeSalary = prompt('Enter the salary of the employee:'); // Prompt user for employee salary and save it in the employee object
+    const salaryNumber = +employeeSalary; // Convert the salary to a number using the unary plus operator
+
+    employees.push({ // Store the employee object in the employees array
+      firstName: employeeFirstName,
+      lastName: employeeLastName,
+      salary: salaryNumber,
+    });
+  }
+
+  return employees; // Return the array of employee objects
+}
     const employeeSalary = +prompt('Enter the salary of the employee:'); // Prompt user for employee salary and convert it to a number using the unary plus operator
 
     employees.push({
