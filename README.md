@@ -12,5 +12,5 @@ As far as any refactoring done to the code, the only section that was to be chan
 ## Tests
 A lot of my tests conssisted on trial and error. When i would write my intended code i would first save and refresh the Live Opened Server to check for any undefined errors in the console. When said error was found, I would then go back to my scrip.js to target the error and see posible solutions through the  provided resources in lectures, READ.md, slack-channel-03resources, and online research, I was able to solve the problem and find possible solutions. Once a solution(s) was found, i tested see if the problem was fixed both on the console and on the interface.
 
-### LINK TO MY WEBSITE 
-https://gustavomrtnz.github.io/Gustavos-Employee-Payroll-Traxcker/
+### LINK TO MY WEBSITE
+https://gustavomrtnz.github.io/Gustavos-Employee-Payroll-Tracker/
